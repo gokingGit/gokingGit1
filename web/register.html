@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人注册</title>
+    <!-- 引入favicon图标 -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 引入初始化css -->
+    <link rel="stylesheet" href="css/base.css" />
+    <!-- 引入注册页面css -->
+    <link rel="stylesheet" href="css/register.css" />
+    <script src="./js/zhuce.js"></script>
+</head>
+
+<body>
+    <!-- 注册专区：registerarea
+    注册内容:reg-form
+    错误的:error
+    成功的:success
+    默认的:default -->
+    <div class="w">
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="./img/logo.jpg" /></a>
+            </div>
+        </header>
+        <div class="registerarea">
+            <h3>
+                注册新用户
+                <div class="login">我有账号，去<a href="denglu.html">登录</a></div>
+            </h3>
+            <div class="reg_form">
+                <form action="./index.html" onsubmit="return validate();">
+                    <ul>
+                        <li>
+                            <label for="phone">手机号\账号：</label>
+                            <input id="phone" placeholder="请输入手机号\账号" type="text" class="inp" />
+                            <span id="error" class="error">手机号格式不正确</span>
+                        </li>
+
+                        <!-- <li><label>短信验证码：</label><input type="text" class="inp"><span class="success">验证码正确</span></li> -->
+
+                        <li>
+                            <label>登录密码：</label>
+                            <input type="password" id="password" placeholder="请输入密码" class="inp" />
+                            <!-- <span class="error" id="error">密码格式错误</span> -->
+                        </li>
+
+                        <!-- <li class="safe">安全程度: <em class="ruo">弱</em><em class="zhong">中</em><em class="qiang">强</em>
+                        </li> -->
+
+                        <li>
+                            <label>确认密码：</label>
+                            <input type="password" id="password1" class="inp" placeholder="请再次输入密码" />
+                            <span class="error" id="error">密码不一致，请重新输入</span>
+                        </li>
+
+                        <!-- <li class="agree">
+                            <input type="checkbox" />同意协议并注册
+                            <a href="#">《知晓用户协议》</a>
+                        </li> -->
+
+                        <li>
+                            <input type="submit" value="完成注册" class="btn" onclick="" />
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="mod_copyright">
+                <div class="links">
+                    <a href="#">关于我们</a>| <a href="#">联系我们</a>|
+                    <a href="#">加入本站</a>| <a href="#">企业服务</a>|
+                    <a href="#">商家入驻</a>
+                </div>
+                <div class="copyright">
+                    有光即可摄影。--艾尔弗雷德<br /> 一个真正的摄影师像真正的诗人或真正的画家那样少见。--简·考克多 <br /> 我渴望捕捉我眼前的美，经过长期的努力，终于如愿以偿。--茱莉亚·玛格丽特·卡梅伦
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

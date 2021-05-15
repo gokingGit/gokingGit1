@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+    <style>
+        .tab-index,
+        .tab {
+            list-style: none;
+        }
+        
+        .tab-index li {
+            display: inline-block;
+            border: 1px black solid;
+        }
+        /* 先隐藏所有的tab标签元素 */
+        
+        .tab ul {
+            display: none;
+        }
+        /* 显示激活的（class='active'）tab标签 */
+        
+        .tab .active {
+            display: block;
+        }
+    </style>
+
+    <!-- tab标签 -->
+    <ul class="tab-index">
+        <li data-id="#cate1">shwww</li>
+        <li data-id="#cate2">warchina</li>
+        <li data-id="#cate3">ldf</li>
+    </ul>
+
+    <!-- 详细内容 -->
+    <div class="tab">
+        <ul id="cate1">
+            <li>https://www.shwww.net</li>
+        </ul>
+        <ul id="cate2">
+            <li>http://www.warchina.com</li>
+        </ul>
+        <ul id="cate3">
+            <li>https://www.ldfldf.com</li>
+        </ul>
+    </div>
+
+    <script>
+        // 页面加载时，选中第一个元素并为其设置 class="active" ，使第一个元素可以显示
+        document.querySelector('.tab ul:first-child').setAttribute('class', 'active');
+        // 响应事件，鼠标移动或者点击元素时的事件处理函数
+        const eventHandler = function(event) {
+            document.querySelector('.tab .active').removeAttribute('class'); // 先将之前显示的标签隐藏
+            const targetId = event.target.dataset['id']; // 取得需要显示的tab的 id
+            document.querySelector(targetId).setAttribute('class', 'active'); // 显示该id的tab标签
+        };
+
+        const elements = document.querySelectorAll('.tab-index li'); // 选中所有需要绑定响应事件的元素
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].addEventListener('mouseover', eventHandler); // 绑定事件处理函数
+        }
+    </script>
+
+</body>
+
+</html>

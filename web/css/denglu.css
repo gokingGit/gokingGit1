@@ -1,0 +1,164 @@
+  html,
+  body {
+      width: 100%;
+      /* height: 100%; */
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+  }
+  
+  body {
+      background-image: url("../img/云海.jpg");
+      background-repeat: no-repeat;
+      /* background-position: center top; */
+      background-attachment: fixed;
+      background-size: cover;
+      /* background-size：
+        cover: 会让背景图充满整个盒子 按宽和高中小的拉伸  将小的拉满结束  会有一部分遗失 
+        contain: 会有空白 按宽和高中大的拉伸 将大的拉满结束 会有留白
+        */
+  }
+  
+  .d {
+      width: 1220px;
+      margin: 0 auto;
+      /* border:solid; */
+  }
+  
+  .header {
+      height: 84px;
+      /* background-color: #f2b009cd; */
+      /* border-bottom: 1px solid rgb(31, 113, 180); */
+  }
+  
+  .header_center {
+      /* position:static; */
+      /* float:left; */
+      font-size: 30px;
+      font-style: italic;
+      color: #999;
+      /* margin-top: -20px; */
+      /* margin-bottom: -30px; */
+      padding-left: 38%;
+      /* line-height: 30px;   */
+      /* align-content: center; */
+      /* line-height: 10px; */
+  }
+  
+  a:link {
+      /* 未访问时设置的样式 */
+      color: rgb(48, 48, 85);
+      text-decoration: none;
+  }
+  /* 访问后 */
+  /* a:visited {
+    color: rgba(255, 0, 0, 0.501);
+} */
+  /* 鼠标放到上方时 */
+  
+  a:hover {
+      color: skyblue;
+  }
+  /* 鼠标点击时 */
+  /* a:active {
+    color: green;
+} */
+  
+  .logo {
+      width: 1200px;
+      height: 60px;
+      padding-top: 12px;
+      padding-left: 0%;
+      /* border: solid ; */
+  }
+  
+  .header_right {
+      /* overflow: hidden; */
+      float: right;
+      font-size: 14px;
+      padding-top: 10px;
+      padding-right: 30px;
+  }
+  
+  .content {
+      /* display: block; */
+      display: flex;
+      position: relative;
+      margin-right: 35px;
+      width: 1200px;
+      height: 600px;
+      margin: 60px auto;
+      /* border: 1px solid red; */
+  }
+  
+  .c_l {
+      /* float: left;
+       */
+      flex: 1;
+      font-size: 30px;
+      font-weight: 400;
+      font-style: italic;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      /* display: inline-block; */
+      color: rgb(168, 165, 165);
+      text-shadow: orange 10px 10px 10px;
+      padding-top: 30px;
+      /* border: 1px solid red; */
+  }
+  
+  .c_r {
+      flex: 1;
+      /* display: inline-block; */
+      /* float: right; */
+      /* border: 1px solid red; */
+      height: 500px;
+  }
+  
+  .content ul {
+      display: inline-block;
+      width: 300px;
+      height: 300px;
+      margin-left: 300px;
+      /* border: 1px solid #ccc; */
+  }
+  
+  .content ul li {
+      list-style: none;
+      margin-bottom: 25px;
+      /* border: 1px solid #ccc; */
+  }
+  
+  label {
+      display: inline-block;
+      text-align: right;
+      margin: 20px 0 0 130px;
+      /* border: 1px solid #ccc; */
+  }
+  
+  .inp {
+      display: inline-block;
+      width: 200px;
+      height: 31px;
+      margin: 20px 0 0px 98px;
+      border-radius: 5px;
+      outline: none;
+      border: 1px transparent solid;
+  }
+  
+  input:focus {
+      background-color: #fcfcfc;
+  }
+  
+  .btn {
+      width: 200px;
+      height: 34px;
+      background-color: #1ea5ce;
+      font-size: 14px;
+      color: #fff;
+      border-radius: 10px;
+      margin: 20px 0px 0px 100px;
+      border: none;
+      outline: none;
+  }

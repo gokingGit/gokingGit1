@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言发布</title>
+    <style>
+        body {
+            margin: 200px;
+        }
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        li {
+            list-style: none;
+            width: 500px;
+            height: 30px;
+            margin-top: 5px;
+            border: 1px solid black;
+            background-color: pink;
+        }
+        
+        textarea {
+            width: 200px;
+            height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea name="" id=""></textarea>
+    <button>发布</button>
+    <ul>
+
+    </ul>
+    <script>
+        //获取元素
+        var btn = document.querySelector('button');
+        var text = document.querySelector('textarea');
+        var ul = document.querySelector('ul');
+        //注册时间
+        btn.onclick = function() {
+            if (text.value == '') {
+                alert("您没有输入内容。")
+                return false;
+            } else {
+                var li = document.createElement('li');
+                li.innerHTML = text.value;
+                //ul.appendChild(li);
+                ul.insertBefore(li, ul.children[0])
+            }
+            text.value = '';
+
+        }
+    </script>
+</body>
+
+</html>

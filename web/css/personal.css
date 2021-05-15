@@ -1,0 +1,117 @@
+.header {
+    width: 100%;
+    height: 16px;
+    background-color: #111;
+}
+
+.header .header_l ul li {
+    float: left;
+    font-size: 12px;
+    color: #fff;
+    margin-right: 30px;
+}
+
+.header .header_r ul li {
+    float: right;
+    font-size: 12px;
+    color: #fff;
+    margin-right: 30px;
+}
+
+.header .header_r ul .den {
+    cursor: pointer;
+}
+
+.header .header_r ul li img {
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+
+.header a {
+    color: #fff;
+}
+
+.header a:hover {
+    color: skyblue;
+}
+
+.centent {
+    height: 160px;
+    /* position: absolute; */
+}
+
+.centent .centent_t {
+    position: relative;
+    height: 160px;
+    width: 100%;
+    background-image: url(../img/光耀稻田.jpg);
+    background-repeat: no-repeat;
+    /* background-position: center top; */
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-size：
+      cover: 会让背景图充满整个盒子 按宽和高中小的拉伸  将小的拉满结束  会有一部分遗失 
+      contain: 会有空白 按宽和高中大的拉伸 将大的拉满结束 会有留白
+      */
+}
+
+.centent .centent_b {
+    position: relative;
+    top: -30px;
+    left: 50%;
+    margin-left: -444px;
+    background-color: skyblue;
+}
+
+.centent .centent_b div {
+    width: 100px;
+    float: left;
+    margin-right: 100px;
+}
+
+.centent .centent_b div a {
+    color: #fff;
+}
+
+.centent .centent_b div a:hover {
+    color: skyblue;
+}
+
+.centent .centent_b div input {
+    width: 60px;
+    /* position: absolute; */
+    height: 60px;
+    border-radius: 50%;
+}
+
+.centent .centent_f {
+    position: relative;
+    top: 30px;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    text-align: center;
+    /* background-color: red; */
+}
+
+.centent .centent_f .self {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.centent .centent_f .self p {
+    width: 200px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.centent_f .self .input {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin-left: -400px;
+    margin-top: 60px;
+    background-color: skyblue;
+}

@@ -1,0 +1,180 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 84px;
+    border-bottom: 2px solid rgb(31, 113, 180);
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    padding-top: 8px;
+    /* border: solid ; */
+}
+
+.registerarea {
+    height: 522px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.registerarea h3 {
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    background-color: #ececec;
+    line-height: 42px;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.login {
+    float: right;
+    font-size: 16px;
+}
+
+.login a {
+    text-decoration: none;
+    color: #1ba1e6;
+}
+
+.reg_form {
+    width: 600px;
+    background-color: #fff;
+    margin: 80px auto 0;
+}
+
+.reg_form ul li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.reg_form ul li label {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+}
+
+.reg_form ul li .inp {
+    width: 242px;
+    height: 37px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus {
+    background-color: #e9e3e3;
+}
+
+.error {
+    display: none;
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+.safe {
+    padding-left: 175px;
+}
+
+.safe em {
+    padding: 0 12px;
+}
+
+.ruo {
+    background-color: #de1111;
+}
+
+.zhong {
+    background-color: green;
+}
+
+.qiang {
+    background-color: rgb(253, 176, 9);
+}
+
+.agree {
+    padding-left: 115px;
+}
+
+.agree input {
+    vertical-align: middle;
+}
+
+.agree a {
+    color: #1ba1e6;
+}
+
+.btn {
+    width: 200px;
+    height: 34px;
+    background-color: #c81623;
+    font-size: 14px;
+    color: #fff;
+    margin: 20px 0 0 130px;
+    outline: none;
+    border: none;
+}
+
+.mod_copyright {
+    text-align: center;
+    padding-top: 14px;
+    font-size: 14px;
+    background-color: #333;
+}
+
+.links {
+    margin-bottom: 15px;
+}
+
+.links a {
+    text-decoration: none;
+    margin: 0 3px;
+    color: #cccc;
+}
+
+
+/* a:visited {
+    color: #cfcfcf;
+} */
+
+a:link {
+    color: #fa9804;
+}
+
+a:hover {
+    color: #f0a8a8;
+}
+
+
+/* a:active {
+    color: green;
+} */
+
+.copyright {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    line-height: 20px;
+    color: #cfcfcf;
+}
+
+.seckill-notice {
+    font-size: 12px;
+    color: #999;
+    margin-top: 100px;
+    padding-bottom: 35px;
+}
+
+.footer {
+    float: none;
+    background-color: #333;
+    /* border: 1px solid black; */
+    height: 200px;
+    /* display: none; */
+}
